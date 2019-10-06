@@ -1,17 +1,16 @@
 //
-//  CatTableViewCell.swift
+//  AddCatTableViewCell.swift
 //  Appdev Training
 //
-//  Created by Nguyễn Đức Quang on 9/28/19.
+//  Created by Nguyễn Đức Quang on 10/4/19.
 //  Copyright © 2019 Nguyễn Đức Quang. All rights reserved.
 //
 
 import UIKit
 
-class CatTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var CatName: UILabel!
-    @IBOutlet weak var CatImage: UIImageView!
+class AddCatTableViewCell: UITableViewCell {
+    @IBOutlet weak var AddCatTextView: UITextView!
+    @IBOutlet weak var AddCatPickerView: UIPickerView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

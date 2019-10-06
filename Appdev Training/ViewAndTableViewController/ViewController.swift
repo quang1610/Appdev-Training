@@ -28,8 +28,16 @@ class ViewController: UIViewController {
         } else {
             enterSubmitMode()
         }
-        Cat.addCat(name: "Cutie", age: 2, image: #imageLiteral(resourceName: "cu2x6Z7"), type: "smoll")
-        Cat.addCat(name: "Leon", age: 1, image: #imageLiteral(resourceName: "d81ff3fa3dfd62402dbb2f34668ebf6516623fde_00"), type: "Smoller")
+        if (Cat.count == 0) {
+            Cat.loadCats {(result) in
+                // here we don't need to call result!. The exclamation ! is not necessary since we already did so in the loadCats function.
+                for entry in result {
+                    let imageURL = URL(string: entry["image"]!)
+                    let image = UIImage(data: try! Data(contentsOf: imageURL!))
+                    Cat.addCat(name: entry["name"]!, age: Int(entry["age"]!), image: image, type: entry["type"]!)
+                }
+            }
+        }
     }
     
     func enterClearMode() {

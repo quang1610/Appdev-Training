@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27019F00233FDC3B008C81DA /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27019EFF233FDC3B008C81DA /* Cat.swift */; };
+		276229DE2348516E006CF6BD /* AddCatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276229DD2348516E006CF6BD /* AddCatTableViewCell.swift */; };
+		276229E02348519E006CF6BD /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276229DF2348519E006CF6BD /* AddCatViewController.swift */; };
 		278E4F4C233F28A5004C8FE9 /* CatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E4F4B233F28A5004C8FE9 /* CatTableViewController.swift */; };
 		278E4F4E233F28D0004C8FE9 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E4F4D233F28D0004C8FE9 /* CatTableViewCell.swift */; };
 		27C70223233B384000073EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C70222233B384000073EE5 /* AppDelegate.swift */; };
@@ -16,7 +18,6 @@
 		27C7022A233B384000073EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C70228233B384000073EE5 /* Main.storyboard */; };
 		27C7022C233B384100073EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C7022B233B384100073EE5 /* Assets.xcassets */; };
 		27C7022F233B384100073EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C7022D233B384100073EE5 /* LaunchScreen.storyboard */; };
-		27C7023A233B384100073EE5 /* Appdev_TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C70239233B384100073EE5 /* Appdev_TrainingTests.swift */; };
 		27C70245233B384100073EE5 /* Appdev_TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C70244233B384100073EE5 /* Appdev_TrainingUITests.swift */; };
 		27E133DE233FE53A00F0DE03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E133DD233FE53A00F0DE03 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		27019EFF233FDC3B008C81DA /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		276229DD2348516E006CF6BD /* AddCatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatTableViewCell.swift; sourceTree = "<group>"; };
+		276229DF2348519E006CF6BD /* AddCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
 		278E4F4B233F28A5004C8FE9 /* CatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewController.swift; sourceTree = "<group>"; };
 		278E4F4D233F28D0004C8FE9 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
 		27C7021F233B384000073EE5 /* Appdev Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appdev Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +95,37 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		276229D823484DD6006CF6BD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				27C7022D233B384100073EE5 /* LaunchScreen.storyboard */,
+				27C70222233B384000073EE5 /* AppDelegate.swift */,
+				27C70224233B384000073EE5 /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		276229DB2348503E006CF6BD /* View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				278E4F4D233F28D0004C8FE9 /* CatTableViewCell.swift */,
+				276229DD2348516E006CF6BD /* AddCatTableViewCell.swift */,
+			);
+			path = "View Cell";
+			sourceTree = "<group>";
+		};
+		276229DC23485060006CF6BD /* View and Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27E133DD233FE53A00F0DE03 /* DetailViewController.swift */,
+				278E4F4B233F28A5004C8FE9 /* CatTableViewController.swift */,
+				27C70226233B384000073EE5 /* ViewController.swift */,
+				276229DF2348519E006CF6BD /* AddCatViewController.swift */,
+			);
+			name = "View and Table View Controller";
+			path = ViewAndTableViewController;
+			sourceTree = "<group>";
+		};
 		27C70216233B384000073EE5 = {
 			isa = PBXGroup;
 			children = (
@@ -115,17 +149,13 @@
 		27C70221233B384000073EE5 /* Appdev Training */ = {
 			isa = PBXGroup;
 			children = (
+				27C70230233B384100073EE5 /* Info.plist */,
+				276229DC23485060006CF6BD /* View and Table View Controller */,
+				276229DB2348503E006CF6BD /* View Cell */,
+				276229D823484DD6006CF6BD /* Other */,
 				27019EFE233FDBFE008C81DA /* Models */,
-				27C70222233B384000073EE5 /* AppDelegate.swift */,
-				27C70224233B384000073EE5 /* SceneDelegate.swift */,
-				27C70226233B384000073EE5 /* ViewController.swift */,
 				27C70228233B384000073EE5 /* Main.storyboard */,
 				27C7022B233B384100073EE5 /* Assets.xcassets */,
-				27C7022D233B384100073EE5 /* LaunchScreen.storyboard */,
-				27C70230233B384100073EE5 /* Info.plist */,
-				278E4F4B233F28A5004C8FE9 /* CatTableViewController.swift */,
-				278E4F4D233F28D0004C8FE9 /* CatTableViewCell.swift */,
-				27E133DD233FE53A00F0DE03 /* DetailViewController.swift */,
 			);
 			path = "Appdev Training";
 			sourceTree = "<group>";
@@ -280,11 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C70227233B384000073EE5 /* ViewController.swift in Sources */,
+				276229E02348519E006CF6BD /* AddCatViewController.swift in Sources */,
 				27C70223233B384000073EE5 /* AppDelegate.swift in Sources */,
 				27019F00233FDC3B008C81DA /* Cat.swift in Sources */,
 				278E4F4E233F28D0004C8FE9 /* CatTableViewCell.swift in Sources */,
 				278E4F4C233F28A5004C8FE9 /* CatTableViewController.swift in Sources */,
 				27C70225233B384000073EE5 /* SceneDelegate.swift in Sources */,
+				276229DE2348516E006CF6BD /* AddCatTableViewCell.swift in Sources */,
 				27E133DE233FE53A00F0DE03 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C7023A233B384100073EE5 /* Appdev_TrainingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
