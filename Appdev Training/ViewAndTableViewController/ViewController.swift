@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension UIViewController {
+    func dismissKeyboard() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+}
+
 class ViewController: UIViewController {
     // instance variable
     private var submitMode:Bool = true
@@ -21,6 +29,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dismissKeyboard()
         
         if (UserDefaults.standard.object(forKey: "name") != nil && UserDefaults.standard.object(forKey: "classYear") != nil) {
             enterClearMode()
