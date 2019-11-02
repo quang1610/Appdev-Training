@@ -488,7 +488,7 @@
 		27C7024A233B384100073EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Appdev Training/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -506,7 +506,7 @@
 		27C7024B233B384100073EE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Appdev Training/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

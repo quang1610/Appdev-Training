@@ -47,6 +47,7 @@ class AddCatTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         age = row
+        pickerView.selectRow(age, inComponent: 0, animated: true)
         if(age != 1)
         {
             AddCatTextView.text = "Age " + String(age)

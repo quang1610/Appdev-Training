@@ -123,7 +123,11 @@ class AddCatViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
                 if (isPickerViewIsOpened) {
                     cell.AddCatPickerView.isHidden = false
-                    cell.AddCatPickerView.selectRow(0, inComponent: 0, animated: false)
+                    if (age >= 0) {
+                        cell.AddCatPickerView.selectRow(age, inComponent: 0, animated: false)
+                    } else {
+                        cell.AddCatPickerView.selectRow(0, inComponent: 0, animated: false)
+                    }
                 } else {
                     cell.AddCatPickerView.isHidden = true
                 }
